@@ -9,7 +9,7 @@
 // return false
 // }
 
-// the runtime of this function is O(n^2) & space complexity is O(1)
+// the runtime of this function is O(n^2) & space complexity is O(N)
 
 
 // console.log(addToZero([]))
