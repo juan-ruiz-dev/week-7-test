@@ -1,0 +1,23 @@
+tinyArray
+32.9 microseconds
+append 68.7 microseconds
+
+smallArray
+insert 43.4 μs
+append 80.8 μs
+
+mediumArray
+insert 145.9 μs
+append 69.3 μs
+
+largeArray
+insert 6.7404 ms
+append 72.9 μs
+
+extraLargeArray
+insert 657.4333 ms
+append 67.3 μs
+
+
+
+It is pretty obvious that append scales much better. regardless of the size of the array the runtime is staying in the microseconds instead of milliseconds. Insert is much slower because its having to move everything over one after inserting a new number, append is faster because it doesn't have to iterate, it just pushes it into the array. 
